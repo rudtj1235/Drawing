@@ -34,7 +34,8 @@ app.post('/create-room', (req, res) => {
 
 // 라우트: 방 목록 가져오기
 app.get('/rooms', (req, res) => {
-    res.json(rooms);
+    console.log('Rooms:', rooms);  // rooms 배열의 상태를 확인하기 위해 로그를 출력합니다
+    res.json(rooms);  // 클라이언트에 rooms 배열을 JSON 형식으로 응답합니다
 });
 
 // 라우트: 그림 저장
