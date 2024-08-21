@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 16px;
+    width: 80%;
+}
+
+#drawCanvas {
+    margin-top: 20px;
+}
+
+#submitBtn, #backToRoomsBtn {
+    margin-top: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+#room-list-section, #create-room-section, #drawing-section, #gallery-section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#room-list-section {
+    display: block; /* 기본적으로 방 목록 화면이 표시되도록 설정 */
+}
+
+#gallery-section {
+    display: none; /* 초기에는 숨김 */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+#gallery img {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.image-card {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    width: 220px;
+}
+
+.score-display {
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rate-button {
+    margin-top: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.rating-options {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.rating-options button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.room-item {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ddd;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#roomList {
+    padding: 20px;
+}

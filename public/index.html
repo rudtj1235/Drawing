@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Drawing Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Classroom Drawing Tool</h1>
+
+    <!-- 방 목록 화면 -->
+    <div id="room-list-section">
+        <h2>Room List</h2>
+        <button id="createRoomBtn">방 만들기</button>
+        <div id="roomList"></div>
+    </div>
+
+    <!-- 방 생성 화면 -->
+    <div id="create-room-section" style="display:none;">
+        <h2>Create Room</h2>
+        <label for="teacherKey">교사 키:</label>
+        <input type="password" id="teacherKey" placeholder="Enter teacher key">
+        <label for="roomTitle">방 제목:</label>
+        <input type="text" id="roomTitle" placeholder="Enter room title">
+        <button id="confirmCreateRoomBtn">확인</button>
+        <div id="roomPasswordDisplay" style="display:none;"></div>
+        <button id="backToListBtn">Back to Room List</button>
+    </div>
+
+    <!-- 그림 그리기 화면 -->
+    <div id="drawing-section" style="display:none;">
+        <h2>Drawing Room: <span id="roomTitleDisplay"></span></h2>
+        <canvas id="drawCanvas" width="500" height="500" style="border:1px solid black;"></canvas>
+        <button id="submitBtn">Submit</button>
+        <button id="backToRoomsBtn">Back to Room List</button>
+    </div>
+
+    <!-- 갤러리 화면 -->
+    <div id="gallery-section" style="display:none;">
+        <h2>Gallery</h2>
+        <div id="gallery"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
